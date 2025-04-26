@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savoria - Fine Dining Experience</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Savoria</h1>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-controls">
+                <div class="dark-mode-toggle" id="darkModeToggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in">Welcome to Savoria</h1>
+                <h2 class="fade-in">Fine Dining Experience</h2>
+                <p class="fade-in">Indulge in a culinary journey that celebrates flavors, tradition, and innovation.</p>
+                <div class="cta-buttons fade-in">
+                    <a href="#reservation" class="btn primary-btn">Reserve a Table</a>
+                    <a href="#menu" class="btn secondary-btn">View Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Story</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>A Passion for Culinary Excellence</h3>
+                    <p>Founded in 2010, Savoria has been serving exquisite dishes crafted with passion and creativity. Our chef-driven menu features seasonal ingredients sourced from local farmers and producers.</p>
+                    <p>We believe in creating memorable dining experiences that engage all the senses, combining exceptional food with warm hospitality in an elegant atmosphere.</p>
+                    <a href="#about" class="btn text-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=800&auto=format&fit=crop" alt="Savoria Restaurant Interior" class="fade-in-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section class="specialties">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Specialties</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="specialties-grid">
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Seasonal Menu</h3>
+                    <p>Our menu changes with the seasons, ensuring the freshest ingredients and innovative dishes year-round.</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-wine-glass-alt"></i>
+                    </div>
+                    <h3>Wine Pairing</h3>
+                    <p>Expertly curated wine selection to complement and enhance your dining experience.</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-icon">
+                        <i class="fas fa-cheese"></i>
+                    </div>
+                    <h3>Artisanal Ingredients</h3>
+                    <p>We source the finest ingredients from local farmers and artisanal producers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Menu</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-menu="starters">Starters</button>
+                <button class="menu-tab" data-menu="mains">Main Course</button>
+                <button class="menu-tab" data-menu="desserts">Desserts</button>
+                <button class="menu-tab" data-menu="drinks">Drinks</button>
+            </div>
+            <div class="menu-content">
+                <div class="menu-category active" id="starters">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1595295333158-4742f28fbd85?q=80&w=500&auto=format&fit=crop" alt="Truffle Arancini">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Truffle Arancini</h3>
+                                <span class="price">$14</span>
+                            </div>
+                            <p>Crispy risotto balls with wild mushrooms, truffle oil, and parmesan cheese</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1599021456807-25db0f974333?q=80&w=500&auto=format&fit=crop" alt="Seared Scallops">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Seared Scallops</h3>
+                                <span class="price">$18</span>
+                            </div>
+                            <p>Pan-seared scallops with cauliflower purée, crispy pancetta, and herb oil</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?q=80&w=500&auto=format&fit=crop" alt="Beet & Goat Cheese Salad">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Beet & Goat Cheese Salad</h3>
+                                <span class="price">$12</span>
+                            </div>
+                            <p>Roasted beets, whipped goat cheese, candied walnuts, and balsamic reduction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-category" id="mains">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1625937286074-9ca519d5d9df?q=80&w=500&auto=format&fit=crop" alt="Herb-Crusted Rack of Lamb">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Herb-Crusted Rack of Lamb</h3>
+                                <span class="price">$36</span>
+                            </div>
+                            <p>Served with rosemary jus, roasted garlic mashed potatoes, and seasonal vegetables</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=500&auto=format&fit=crop" alt="Pan-Seared Salmon">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Pan-Seared Salmon</h3>
+                                <span class="price">$28</span>
+                            </div>
+                            <p>With lemon beurre blanc, asparagus, and wild rice pilaf</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1633964913295-ceb43826e7c7?q=80&w=500&auto=format&fit=crop" alt="Wild Mushroom Risotto">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Wild Mushroom Risotto</h3>
+                                <span class="price">$24</span>
+                            </div>
+                            <p>Arborio rice, assorted wild mushrooms, white wine, parmesan, and fresh herbs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-category" id="desserts">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?q=80&w=500&auto=format&fit=crop" alt="Chocolate Fondant">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Chocolate Fondant</h3>
+                                <span class="price">$12</span>
+                            </div>
+                            <p>Warm chocolate cake with a molten center, served with vanilla ice cream</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?q=80&w=500&auto=format&fit=crop" alt="Crème Brûlée">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Crème Brûlée</h3>
+                                <span class="price">$10</span>
+                            </div>
+                            <p>Classic vanilla custard with a caramelized sugar crust</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?q=80&w=500&auto=format&fit=crop" alt="Seasonal Fruit Tart">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Seasonal Fruit Tart</h3>
+                                <span class="price">$11</span>
+                            </div>
+                            <p>Buttery pastry shell filled with pastry cream and topped with fresh seasonal fruits</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-category" id="drinks">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=500&auto=format&fit=crop" alt="Signature Cocktails">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Signature Cocktails</h3>
+                                <span class="price">$14-18</span>
+                            </div>
+                            <p>Ask your server about our seasonal craft cocktail selection</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=500&auto=format&fit=crop" alt="Wine Selection">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Wine Selection</h3>
+                                <span class="price">Varies</span>
+                            </div>
+                            <p>Extensive wine list featuring local and international selections</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?q=80&w=500&auto=format&fit=crop" alt="Craft Beer">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Craft Beer</h3>
+                                <span class="price">$8-12</span>
+                            </div>
+                            <p>Rotating selection of local craft beers on tap and in bottles</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-cta">
+                <a href="#" class="btn primary-btn">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Food Gallery</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1611270629569-8b357cb88da9?q=80&w=500&auto=format&fit=crop" alt="Signature Dish 1">
+                    <div class="gallery-overlay">
+                        <h3>Truffle Pasta</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=500&auto=format&fit=crop" alt="Signature Dish 2">
+                    <div class="gallery-overlay">
+                        <h3>Seared Salmon</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1588168333986-5078d3ae3976?q=80&w=500&auto=format&fit=crop" alt="Signature Dish 3">
+                    <div class="gallery-overlay">
+                        <h3>Beef Wellington</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?q=80&w=500&auto=format&fit=crop" alt="Signature Dish 4">
+                    <div class="gallery-overlay">
+                        <h3>Chocolate Dessert</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1533745848184-3db07256e163?q=80&w=500&auto=format&fit=crop" alt="Signature Dish 5">
+                    <div class="gallery-overlay">
+                        <h3>Seafood Platter</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=500&auto=format&fit=crop" alt="Signature Dish 6">
+                    <div class="gallery-overlay">
+                        <h3>Vegetarian Delight</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Guests Say</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"An unforgettable dining experience. The flavors were exquisite and the service impeccable. Will definitely be returning soon!"</p>
+                        <div class="testimonial-author">
+                            <h4>Emily Johnson</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"The chef's tasting menu was a culinary journey that surprised and delighted us at every turn. Savoria has become our favorite special occasion restaurant."</p>
+                        <div class="testimonial-author">
+                            <h4>Michael Rodriguez</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"From the ambiance to the food presentation and flavors, everything was perfect. The wine pairing recommendations were spot on!"</p>
+                        <div class="testimonial-author">
+                            <h4>Sarah Thompson</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <div class="section-header">
+                <h2>Make a Reservation</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="reservation-content">
+                <div class="reservation-form">
+                    <form id="booking-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Time</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" name="guests" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6">6 People</option>
+                                <option value="7+">7+ People</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="special-requests">Special Requests</label>
+                            <textarea id="special-requests" name="special-requests" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Reserve Now</button>
+                    </form>
+                </div>
+                <div class="reservation-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Opening Hours</h3>
+                        <ul>
+                            <li><span>Monday - Thursday:</span> 5:00 PM - 10:00 PM</li>
+                            <li><span>Friday - Saturday:</span> 5:00 PM - 11:00 PM</li>
+                            <li><span>Sunday:</span> 5:00 PM - 9:00 PM</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Contact</h3>
+                        <p>For immediate assistance or large party reservations, please call us directly.</p>
+                        <a href="tel:+1234567890" class="contact-link">+1 (234) 567-890</a>
+                        <a href="mailto:reservations@savoria.com" class="contact-link">reservations@savoria.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p>123 Culinary Avenue<br>Gourmet District<br>New York, NY 10001</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@savoria.com">info@savoria.com</a></p>
+                        <p><a href="mailto:events@savoria.com">events@savoria.com</a></p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                        <p><a href="tel:+1234567891">+1 (234) 567-891</a></p>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425882426698!3d40.74076427932795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzI2LjgiTiA3NMKwMDAnMDkuMiJX!5e0!3m2!1sen!2sus!4v1619909302578!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Savoria</h2>
+                    <p>Fine Dining Experience</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#reservation">Reservations</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for special offers and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Savoria Restaurant. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
